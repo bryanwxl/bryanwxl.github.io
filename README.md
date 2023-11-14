@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>个人信息介绍</title>
+  <title>Xilin Wang</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -26,17 +26,16 @@
 </head>
 <body>
 
-  <h1>你的名字</h1>
+  <h1>Xilin Wang (Bryan)</h1>
 
   <img src="your_profile_picture.jpg" alt="Your Profile Picture">
 
-  <p>你的简介或欢迎语，介绍你的专业领域、兴趣爱好等。</p>
+  <p>Physcis Astronomy and </p>
 
   <h2>个人信息</h2>
 
-  <p><strong>邮箱：</strong> your.email@example.com</p>
-  <p><strong>GitHub：</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-  <p><strong>LinkedIn：</strong> <a href="https://www.linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+  <p><strong>邮箱：</strong> wangxl.bryan@gmail.com</p>
+  <p><strong>GitHub：</strong> <a href="https://github.com/yourusername" target="_blank">bryanwxl.github.io</a></p>
 
   <h2>技能</h2>
 
@@ -49,7 +48,7 @@
 
   <h2>项目经验</h2>
 
-  <p><strong>项目1：</strong> 项目描述和您的角色。</p>
+  <p><strong>项目1：</strong> Ross Program 2023</p>
   <p><strong>项目2：</strong> 项目描述和您的角色。</p>
   <!-- 在此添加更多项目经验 -->
 
