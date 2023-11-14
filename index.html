@@ -29,9 +29,14 @@
       margin: 0;
     }
 
+    p {
+      margin-top: 60px; /* 调整欢迎文本的顶部边距 */
+      text-align: center;
+    }
+
     nav {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start; /* 调整导航栏左对齐 */
       margin: 20px 0;
     }
 
@@ -57,10 +62,6 @@
 
     h2 {
       color: #4285f4; /* 新的标题颜色 */
-    }
-
-    p {
-      text-align: justify;
     }
 
     /* 修正按钮样式 */
@@ -129,7 +130,7 @@
 </head>
 <body>
   <header>
-    <h1>Wang Xilin (Bryan)</h1>
+    <h1>Wang Xilin</h1>
     <p>School: International Department, The Affiliated High School of SCNU</p>
     <p>Contact: <a href="mailto: wangxl.bryan@gmail.com" style="color: white;">wangxl.bryan@gmail.com</a></p>
   </header>
@@ -146,6 +147,8 @@
       <a href="javascript:void(0);" onclick="showContent('photo')">Photography Club</a>
     </div>
   </div>
+
+  <p>Welcome to My Homepage</p>
 
   <section id="home">
     <h2>Welcome to My Homepage</h2>
