@@ -36,12 +36,12 @@
 
     nav {
       display: flex;
-      justify-content: flex-start; /* 调整导航栏左对齐 */
-      margin: 20px 0;
+      justify-content: space-between; /* 调整导航栏左右对齐 */
+      align-items: center; /* 垂直居中对齐 */
+      margin: 20px 20px; /* 新的外边距 */
     }
 
     nav a {
-      margin: 0 15px;
       text-decoration: none;
       color: #555;
       font-weight: bold;
@@ -79,7 +79,6 @@
     .dropdown {
       position: relative;
       display: inline-block;
-      margin: 20px; /* 新的按钮外边距 */
     }
 
     .dropdown-content {
@@ -148,6 +147,15 @@
       <a href="javascript:void(0);" onclick="showContent('photo')">Photography Club</a>
     </div>
   </div>
+
+  <nav>
+    <a href="javascript:void(0);" onclick="showContent('home')">Home</a>
+    <a href="javascript:void(0);" onclick="showContent('conrad')">Conrad Team Eunoia</a>
+    <a href="javascript:void(0);" onclick="showContent('quasar')">Direct Observation of Quasar</a>
+    <a href="javascript:void(0);" onclick="showContent('Ross')">Ross Program 2023</a>
+    <a href="javascript:void(0);" onclick="showContent('international')">International Night Community</a>
+    <a href="javascript:void(0);" onclick="showContent('photo')">Photography Club</a>
+  </nav>
 
   <p>Welcome to My Homepage</p>
 
