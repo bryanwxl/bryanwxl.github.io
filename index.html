@@ -18,9 +18,7 @@
       padding: 20px;
       text-align: center;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      position: fixed;
       width: 100%;
-      top: 0;
       z-index: 1000;
     }
     h1 {
@@ -37,10 +35,27 @@
       border-radius: 50%;
       margin-top: 20px;
     }
+    nav {
+      background-color: #ff8c00; /* Orange navigation bar */
+      padding: 10px;
+      border-radius: 0 0 10px 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
     section {
       background-color: #fff;
       padding: 30px;
-      margin: 100px 20px 20px; /* Increased margin to accommodate fixed header */
+      margin: 100px 20px 20px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     ul {
@@ -49,20 +64,6 @@
     }
     li {
       margin-bottom: 10px;
-    }
-    nav {
-      position: fixed;
-      right: 20px;
-      top: 20px;
-      background-color: #ff8c00;
-      padding: 10px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 10px;
     }
   </style>
 </head>
