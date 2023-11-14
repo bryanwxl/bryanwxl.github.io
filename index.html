@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xilin Wang</title>
+  <title>个人信息介绍</title>
   <style>
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f5f5dc; /* 米黄色背景 */
+      background-color: #ffe4b5; /* 更接近橙色的米黄色背景 */
       color: #333;
       margin: 0;
       padding: 0;
@@ -46,49 +46,76 @@
     li {
       margin-bottom: 10px;
     }
+    button {
+      background-color: #ff8c00; /* 橙色按钮 */
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Xilin Wang (Bryan)</h1>
+  <header>
+    <h1>你的名字</h1>
+    <img src="your_profile_picture.jpg" alt="Your Profile Picture">
+    <p>你的简介或欢迎语，介绍你的专业领域、兴趣爱好等。</p>
+  </header>
 
-  <img src="your_profile_picture.jpg" alt="Your Profile Picture">
+  <section id="personal-info">
+    <h2>个人信息</h2>
+    <ul>
+      <li><strong>邮箱：</strong> your.email@example.com</li>
+      <li><strong>GitHub：</strong> <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+      <li><strong>LinkedIn：</strong> <a href="https://www.linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></li>
+    </ul>
+    <button onclick="showSkills()">查看技能</button>
+    <button onclick="showProjects()">查看项目</button>
+  </section>
 
-  <p>Physcis Astronomy and </p>
+  <section id="skills" style="display: none;">
+    <h2>技能</h2>
+    <ul>
+      <li>技能1</li>
+      <li>技能2</li>
+      <li>技能3</li>
+      <!-- 在此添加更多技能 -->
+    </ul>
+    <button onclick="showPersonalInfo()">返回个人信息</button>
+    <button onclick="showProjects()">查看项目</button>
+  </section>
 
-  <h2>个人信息</h2>
-
-  <p><strong>邮箱：</strong> wangxl.bryan@gmail.com</p>
-  <p><strong>GitHub：</strong> <a href="https://github.com/yourusername" target="_blank">bryanwxl.github.io</a></p>
-
-  <h2>education</h2>
-
-  <p><strong>项目1：</strong> International Department, The Affiliated High School of SCNU</p>
-  <p><strong>项目2：</strong> </p>
-
-
-  <!-- 可以添加更多部分，如教育经历、工作经验等 -->
-
-
-  <h2>技能</h2>
-
-  <ul>
-    <li>Astronomy</li>
-    <li>badminton</li>
-    <li>技能3</li>
-  </ul>
-
-  <h2>Activity</h2>
-
-  <p><strong>项目1：</strong> Ross Program 2023</p>
-  <p><strong>项目2：</strong> 项目描述和您的角色。</p>
-  <!-- 在此添加更多项目经验 -->
-
-  <!-- 可以添加更多部分，如教育经历、工作经验等 -->
+  <section id="projects" style="display: none;">
+    <h2>项目经验</h2>
+    <p><strong>项目1：</strong> 项目描述和您的角色。</p>
+    <p><strong>项目2：</strong> 项目描述和您的角色。</p>
+    <!-- 在此添加更多项目经验 -->
+    <button onclick="showPersonalInfo()">返回个人信息</button>
+    <button onclick="showSkills()">查看技能</button>
+  </section>
 
   <script>
-    // 可以在这里添加 JavaScript 代码，实现一些交互功能，或者留空不添加。
+    function showSkills() {
+      document.getElementById('personal-info').style.display = 'none';
+      document.getElementById('skills').style.display = 'block';
+      document.getElementById('projects').style.display = 'none';
+    }
+
+    function showProjects() {
+      document.getElementById('personal-info').style.display = 'none';
+      document.getElementById('skills').style.display = 'none';
+      document.getElementById('projects').style.display = 'block';
+    }
+
+    function showPersonalInfo() {
+      document.getElementById('personal-info').style.display = 'block';
+      document.getElementById('skills').style.display = 'none';
+      document.getElementById('projects').style.display = 'none';
+    }
   </script>
 
 </body>
 </html>
+
