@@ -3,164 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xilin Wang's Portfolio</title>
+  <title>Introduction - Wang Xilin</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f5f5f5; /* Light gray background */
-      color: #333;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      color: #444;
     }
+
     header {
-      background-color: #3498db; /* Blue header */
-      padding: 20px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      z-index: 1000;
-      position: fixed;
-      top: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      margin-bottom: 30px;
     }
+
     h1 {
-      color: #fff; /* White text for the header */
-      margin: 0;
+      color: #333;
     }
-    p {
-      color: #666;
+
+    nav {
+      display: flex;
+      justify-content: center;
       margin-bottom: 20px;
     }
-    nav {
-      background-color: #3498db; /* Blue navigation bar */
-      padding: 10px;
-      border-radius: 0 0 10px 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      width: 100%;
-      top: 60px;
-      z-index: 1000;
-      display: none;
-      flex-direction: column;
-      align-items: flex-end;
-    }
+
     nav a {
-      color: #fff;
+      margin: 0 15px;
       text-decoration: none;
-      margin: 5px 10px;
+      color: #555;
+      font-weight: bold;
+      transition: color 0.3s;
     }
-    .menu-icon {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-      color: #fff;
+
+    nav a:hover {
+      color: #007bff;
     }
-    .menu-btn {
-      display: none;
-      background-color: #3498db;
-      color: #fff;
-      border: none;
-      padding: 10px;
-      border-radius: 5px;
-      cursor: pointer;
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      z-index: 1001;
-    }
+
     section {
-      background-color: #fff;
-      padding: 30px;
-      margin: 100px 20px 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+
+    h2 {
+      color: #007bff;
     }
-    li {
-      margin-bottom: 10px;
-    }
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .menu-icon {
-        display: block;
-      }
-      nav {
-        width: 100%;
-      }
-      .menu-btn {
-        display: block;
-      }
+
+    p {
+      text-align: justify;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Xilin Wang (Bryan)</h1>
-    <div class="menu-btn" onclick="toggleNav">&#9776; Menu</div>
-    <div class="menu-icon" onclick="toggleNav">&#9776;</div>
-    <nav>
-      <a href="#personal-info" onclick="toggleNav()">Home</a>
-      <a href="#Ross Program" onclick="toggleNav()">Project 1 - ROSS</a>
-      <a href="#Conrad team-eunoia" onclick="toggleNav()">Project 2 - Eunoia</a>
-      <a href="#direct observation of Quasar" onclick="toggleNav()">Project 3 - Direct Observation</a>
-      <a href="#Photography Club" onclick="toggleNav()">Project 4 - Photography</a>
-      <a href="#International night community" onclick="toggleNav()">Project 5 - International Night Community</a>
-    </nav>
+    <h1>Wang Xilin's Introduction</h1>
   </header>
 
-  <section id="personal-info">
-    <h2>Personal Information</h2>
-    <ul>
-      <li><strong>Email:</strong> wangxl.bryan@gmail.com</li>
-    </ul>
+  <nav>
+    <a href="#conrad">Conrad Team Eunoia</a>
+    <a href="#quasar">Direct Observation of Quasar</a>
+    <a href="#ross">Ross Program</a>
+    <!-- Add links to other activities -->
+  </nav>
+
+  <section id="conrad">
+    <h2>Conrad Team Eunoia</h2>
+    <p>Experience with Conrad Team Eunoia...</p>
   </section>
 
-  <section id="project-ross" style="display: none;">
-    <h2>Project 1 - ROSS</h2>
-    <p>Project description for ROSS and your role.</p>
+  <section id="quasar">
+    <h2>Direct Observation of Quasar</h2>
+    <p>Description of the activity involving direct observation of quasar...</p>
   </section>
 
-  <section id="project-eunoia" style="display: none;">
-    <h2>Project 2 - Eunoia</h2>
-    <p>Project description for Eunoia and your role.</p>
+  <section id="ross">
+    <h2>Ross Program</h2>
+    <p>Description of the participation in the Ross Program...</p>
   </section>
+  <!-- Add content for other activities -->
 
-  <section id="project-direct-observation" style="display: none;">
-    <h2>Project 3 - Direct Observation</h2>
-    <p>Project description for Direct Observation and your role.</p>
-  </section>
-
-  <section id="project-photography" style="display: none;">
-    <h2>Project 4 - Photography</h2>
-    <p>Project description for Photography and your role.</p>
-  </section>
-
-  <section id="project-international-night-community" style="display: none;">
-    <h2>Project 5 - International Night Community</h2>
-    <p>Project description for International Night Community and your role.</p>
-  </section>
-
-  <script>
-    function showProject(projectId) {
-      // Hide all sections
-      document.querySelectorAll('section').forEach(section => section.style.display = 'none');
-      // Show the selected project section
-      document.getElementById(projectId).style.display = 'block';
-    }
-
-    function toggleNav() {
-      document.querySelector('nav').style.display = (window.innerWidth <= 768) ? (document.querySelector('nav').style.display === 'flex' ? 'none' : 'flex') : 'flex';
-    }
-  </script>
-
+  <footer>
+    <p>Contact: <a href="mailto: wangxl.bryan@gmail.com">wangxl.bryan@gmail.com</a></p>
+  </footer>
 </body>
 </html>
