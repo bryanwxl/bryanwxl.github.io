@@ -37,6 +37,15 @@
   <p><strong>邮箱：</strong> wangxl.bryan@gmail.com</p>
   <p><strong>GitHub：</strong> <a href="https://github.com/yourusername" target="_blank">bryanwxl.github.io</a></p>
 
+  <h2>education</h2>
+
+  <p><strong>项目1：</strong> International Department, The Affiliated High School of SCNU</p>
+  <p><strong>项目2：</strong> </p>
+
+
+  <!-- 可以添加更多部分，如教育经历、工作经验等 -->
+
+
   <h2>技能</h2>
 
   <ul>
@@ -45,7 +54,7 @@
     <li>技能3</li>
   </ul>
 
-  <h2>项目经验</h2>
+  <h2>Activity</h2>
 
   <p><strong>项目1：</strong> Ross Program 2023</p>
   <p><strong>项目2：</strong> 项目描述和您的角色。</p>
