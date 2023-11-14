@@ -4,17 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xilin Wang</title>
-  <style>
+
+<style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f5f5dc; /* 米黄色背景 */
+      color: #333;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
       text-align: center;
-      margin: 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     h1 {
       color: #333;
+      margin-bottom: 10px;
     }
     p {
       color: #666;
+      margin-bottom: 20px;
     }
     img {
       max-width: 100%;
@@ -22,9 +34,23 @@
       border-radius: 50%;
       margin-top: 20px;
     }
+    section {
+      background-color: #fff;
+      padding: 30px;
+      margin: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
   </style>
 </head>
 <body>
+
 
   <h1>Xilin Wang (Bryan)</h1>
 
