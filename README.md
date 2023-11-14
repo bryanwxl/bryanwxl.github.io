@@ -40,10 +40,9 @@
   <h2>技能</h2>
 
   <ul>
-    <li>技能1</li>
-    <li>技能2</li>
+    <li>Astronomy</li>
+    <li>badminton</li>
     <li>技能3</li>
-    <!-- 在此添加更多技能 -->
   </ul>
 
   <h2>项目经验</h2>
