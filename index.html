@@ -7,23 +7,28 @@
   <style>
     body {
       font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-color: #ffe4b5; /* Light orange background */
+      background-color: #f0e5cf; /* Light beige background */
       color: #333;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     header {
-      background-color: #ff8c00; /* Orange header */
+      background-color: #ff7043; /* Coral header */
       padding: 20px;
       text-align: center;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       width: 100%;
       z-index: 1000;
+      position: fixed;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     h1 {
       color: #fff; /* White text for the header */
-      margin-bottom: 10px;
+      margin: 0;
     }
     p {
       color: #666;
@@ -36,21 +41,28 @@
       margin-top: 20px;
     }
     nav {
-      background-color: #ff8c00; /* Orange navigation bar */
+      background-color: #ff7043; /* Coral navigation bar */
       padding: 10px;
       border-radius: 0 0 10px 10px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       position: fixed;
       width: 100%;
-      top: 0;
+      top: 60px;
       z-index: 1000;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      display: none;
+      flex-direction: column;
+      align-items: flex-end;
     }
     nav a {
       color: #fff;
       text-decoration: none;
+      margin: 5px 10px;
+    }
+    .menu-icon {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #fff;
     }
     section {
       background-color: #fff;
@@ -65,23 +77,35 @@
     li {
       margin-bottom: 10px;
     }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu-icon {
+        display: block;
+      }
+      nav {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Xilin Wang (Bryan)</h1>
-    <p>Student at International Department, The Affiliated High School of SCNU</p>
+    <img src="your_profile_picture.jpg" alt="Your Profile Picture">
+    <div class="menu-icon" onclick="toggleNav">&#9776;</div>
+    <nav>
+      <a href="#personal-info" onclick="toggleNav()">Home</a>
+      <a href="#project-ross" onclick="toggleNav()">Project 1 - ROSS</a>
+      <a href="#project-eunoia" onclick="toggleNav()">Project 2 - Eunoia</a>
+      <a href="#project-direct-observation" onclick="toggleNav()">Project 3 - Direct Observation</a>
+      <a href="#project-photography" onclick="toggleNav()">Project 4 - Photography</a>
+      <a href="#project-international-night-community" onclick="toggleNav()">Project 5 - International Night Community</a>
+    </nav>
   </header>
-
-  <nav>
-    <a href="#personal-info">Home</a>
-    <a href="#project-ross">Project 1 - ROSS</a>
-    <a href="#project-eunoia">Project 2 - Eunoia</a>
-    <a href="#project-direct-observation">Project 3 - Direct Observation</a>
-    <a href="#project-photography">Project 4 - Photography</a>
-    <a href="#project-international-night-community">Project 5 - International Night Community</a>
-  </nav>
 
   <section id="personal-info">
     <h2>Personal Information</h2>
@@ -121,6 +145,10 @@
       document.querySelectorAll('section').forEach(section => section.style.display = 'none');
       // Show the selected project section
       document.getElementById(projectId).style.display = 'block';
+    }
+
+    function toggleNav() {
+      document.querySelector('nav').style.display = (window.innerWidth <= 768) ? (document.querySelector('nav').style.display === 'flex' ? 'none' : 'flex') : 'flex';
     }
   </script>
 
