@@ -3,94 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xilin Wang</title>
-
-<style>
+  <title>Introduction - Wang Xilin</title>
+  <style>
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background-color: #f5f5dc; /* 米黄色背景 */
-      color: #333;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+      margin: 40px;
+      line-height: 1.6;
+      color: #444;
     }
+
     header {
-      background-color: #fff;
-      padding: 20px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
     }
+
     h1 {
       color: #333;
-      margin-bottom: 10px;
     }
-    p {
-      color: #666;
+
+    nav {
+      display: flex;
+      justify-content: center;
       margin-bottom: 20px;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 50%;
-      margin-top: 20px;
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+      transition: color 0.3s;
     }
+
+    nav a:hover {
+      color: #007bff;
+    }
+
     section {
-      background-color: #fff;
-      padding: 30px;
-      margin: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+
+    h2 {
+      color: #007bff;
     }
-    li {
-      margin-bottom: 10px;
+
+    p {
+      text-align: justify;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Wang Xilin's Introduction</h1>
+    <p>School: International Department, The Affiliated High School of SCNU</a></p>
+    <p>Contact: <a href="mailto: wangxl.bryan@gmail.com">wangxl.bryan@gmail.com</a></p>
+  </header>
 
+   <nav>
+    <a href="javascript:void(0);" onclick="showContent('home')">Home</a>
+    <a href="javascript:void(0);" onclick="showContent('conrad')">Conrad Team Eunoia</a>
+    <a href="javascript:void(0);" onclick="showContent('quasar')">Direct Observation of Quasar</a>
+    <a href="javascript:void(0);" onclick="showContent('ross')">Ross Program</a>
+    <!-- Add links to other activities -->
+  </nav>
 
-  <h1>Xilin Wang (Bryan)</h1>
+  <section id="conrad">
+    <h2>Conrad Team Eunoia</h2>
+    <p>Experience with Conrad Team Eunoia...</p>
+  </section>
 
-  <img src="your_profile_picture.jpg" alt="Your Profile Picture">
+  <section id="quasar">
+    <h2>Direct Observation of Quasar</h2>
+    <p>Description of the activity involving direct observation of quasar...</p>
+  </section>
 
-  <p>Physcis Astronomy and </p>
-
-  <h2>个人信息</h2>
-
-  <p><strong>邮箱：</strong> wangxl.bryan@gmail.com</p>
-  <p><strong>GitHub：</strong> <a href="https://github.com/yourusername" target="_blank">bryanwxl.github.io</a></p>
-
-  <h2>education</h2>
-
-  <p><strong>项目1：</strong> International Department, The Affiliated High School of SCNU</p>
-  <p><strong>项目2：</strong> </p>
-
-
-  <!-- 可以添加更多部分，如教育经历、工作经验等 -->
-
-
-  <h2>技能</h2>
-
-  <ul>
-    <li>Astronomy</li>
-    <li>badminton</li>
-    <li>技能3</li>
-  </ul>
-
-  <h2>Activity</h2>
-
-  <p><strong>项目1：</strong> Ross Program 2023</p>
-  <p><strong>项目2：</strong> 项目描述和您的角色。</p>
-  <!-- 在此添加更多项目经验 -->
-
-  <!-- 可以添加更多部分，如教育经历、工作经验等 -->
-
-  <script>
-    // 可以在这里添加 JavaScript 代码，实现一些交互功能，或者留空不添加。
-  </script>
-
+  <section id="Ross">
+    <h2>Ross Program 2023</h2>
+    <p>Description of the participation in the Ross Program...</p>
+    
+  </section><section id="ross">
+    <h2>International night community</h2>
+    <p>Description of the participation in the Ross Program...</p>
+  </section>
 </body>
 </html>
